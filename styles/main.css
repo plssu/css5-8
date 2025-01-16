@@ -1,0 +1,32 @@
+* {
+    background-color: black;
+}
+
+p {
+    color: #fff;
+}
+
+span
+
+.countdown-container {
+    text-align: center;
+    background: #282c34;
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #timer {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  #timer div {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  #timer div span {
+    font-size: 24px;
+  }
