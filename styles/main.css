@@ -1,32 +1,237 @@
 * {
-    background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-p {
-    color: #fff;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
-span
+.container {
+  display: flex;
+  flex: 1;
+}
 
-.countdown-container {
-    text-align: center;
-    background: #282c34;
-    padding: 40px;
-    border-radius: 10px;
-    color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  #timer {
-    font-size: 48px;
-    font-weight: bold;
-  }
-  
-  #timer div {
-    display: inline-block;
-    margin: 0 10px;
-  }
+.sidebar {
+  display: flex;
+  width: 224px;
+  height: 1715px;
+  padding: 16px 16px 1201px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+}
 
-  #timer div span {
-    font-size: 24px;
-  }
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f9c74f;
+}
+
+.logo {
+  width: 192px;
+  height: 46px;
+  flex-shrink: 0;
+}
+
+span {
+  color: #989898;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  align-self: stretch;
+}
+
+nav {
+  display: flex;
+  width: 192px;
+  padding-bottom: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-bottom: 1px solid #434343;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.account {
+  display: flex;
+  width: 192px;
+  padding-bottom: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-bottom: 1px solid #434343;
+}
+
+.sidebar .account ul {
+  list-style: none;
+}
+
+.sidebar .account ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar .account ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+}
+
+.header {
+  background-color: #282828;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.header .offer-details {
+  color: #f9c74f;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #1f1f1f;
+  border: 2px solid #f9c74f;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  color: #fff;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  width: 300px;
+}
+
+.search-bar button {
+  background-color: #f9c74f;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar button:hover {
+  background-color: #fff;
+}
+
+.search-bar button i {
+  color: #000;
+  font-size: 16px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tags .tag {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9c74f;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tags .tag.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.flash-sale, .all-themes {
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background-color: #282828;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.product .price {
+  margin-bottom: 10px;
+  color: #f9c74f;
+  font-size: 16px;
+}
+
+.product .add-to-cart {
+  padding: 10px 20px;
+  background-color: #f9c74f;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.product .add-to-cart:hover {
+  background-color: #fff;
+}

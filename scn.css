@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span {
+    color: #989898;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    align-self: stretch;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    display: flex;
+    width: 224px;
+    height: 1715px;
+    padding: 16px 16px 1201px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+    border-right: 1px solid #434343;
+    background: #222224;
+}
+
+nav {
+    display: flex;
+    width: 192px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-bottom: 1px solid #434343;
+}
+
+.logo {
+    width: 192px;
+    height: 46px;
+    flex-shrink: 0;
+}
+
+li {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+li > img {
+    color: #fff;
+}
+
+li:hover {
+    display: flex;
+    width: 180px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #FAE101;
+}
+
+.account {
+    display: flex;
+    width: 192px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-bottom: 1px solid #434343;
+}
+
+.left-side ul {
+    list-style: none;
+}
+
+.left-side ul li {
+    margin-bottom: 10px;
+}
+
+.left-side ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.right-side {
+    flex-grow: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.search-bar {
+    display: inline-flex;
+    padding: 16px 16px 16px 366px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 180px;
+    border-bottom: 1px solid #434343;
+    background: #141414;
+}
+
+.search-bar > input {
+    display: flex;
+    padding: 8px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 8px 0px 0px 8px;
+    border-top: 1px solid #FAE101;
+    border-bottom: 1px solid #FAE101;
+    border-left: 1px solid #FAE101;
+}
+
+.search-bar > button {
+    border-radius: 0px 8px 8px 0px;
+    background-color: #FAE101;
+}
+
+.search-bar > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+img[src="images/Myprofilepicture.png"] {
+    width: 40px;
+    height: 40px;
+}
+
+.content {
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
