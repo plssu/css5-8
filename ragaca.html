@@ -71,7 +71,134 @@
                         <p>SpongeBob</p>
                     </a>
                 </div>
+                <div>
+                    <h1 class="flash">Flash Sale</h1>
+                    <div class="flash-on-sale">
+                        <p class="on-sale">On sale Now</p>
+                        <span>Ending in</span>
+                        <div class="countdown">
+                            <div class="time">
+                                <div class="unit">
+                                    <div id="days" class="number">00</div>
+                                    <div class="label">Days</div>
+                                </div>
+                                <div class="unit">
+                                    <div id="hours" class="number">00</div>
+                                    <div class="label">Hours</div>
+                                </div>
+                                <div class="unit">
+                                    <div id="minutes" class="number">00</div>
+                                    <div class="label">Minutes</div>
+                                </div>
+                                <div class="unit">
+                                    <div id="seconds" class="number">00</div>
+                                    <div class="label">Seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        const countdownDuration = 6 * 24 * 60 * 60 * 1000; // 6 days in milliseconds
+                        let targetDate = new Date().getTime() + countdownDuration;
                 
+                        function updateCountdown() {
+                            const now = new Date().getTime();
+                            const distance = targetDate - now;
+                
+                            if (distance <= 0) {
+                                targetDate = new Date().getTime() + countdownDuration;
+                                return;
+                            }
+                
+                            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                            document.getElementById('days').textContent = String(days).padStart(2, '0');
+                            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+                        }
+                
+                        setInterval(updateCountdown, 1000);
+                        updateCountdown();
+                    </script>
+                </div>
+                <div class="cards">
+                    <div>
+                        <div>
+                            <img src="images/wantedGrinch.png" alt="wantedGrinch" />
+                        </div>
+                        <div class="div-two">
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <h4>How i stole Christmas</h4>
+                            <span>Grinch got caught stealing Christmas spirit.</span>
+                            <p>$10.99</p>
+                            <span>$16.99</span>
+                            <button>
+                                Add to cart
+                            </button>
+                        </div>  
+                    </div>
+                    <div>
+                        <div>
+                            <img src="images/wantedGrinch.png" alt="wantedGrinch" />
+                        </div>
+                        <div class="div-two">
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <h4>How i stole Christmas</h4>
+                            <span>Grinch got caught stealing Christmas spirit.</span>
+                            <p>$10.99</p>
+                            <span>$16.99</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="images/wantedGrinch.png" alt="wantedGrinch" />
+                        </div>
+                        <div class="div-two">
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <h4>How i stole Christmas</h4>
+                            <span>Grinch got caught stealing Christmas spirit.</span>
+                            <p>$10.99</p>
+                            <span>$16.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="allthemes">
+                    <p>All Themes</p>
+                    <div class="four-cards">
+                        <div>
+                            <img src="images/card-one.png" alt="wantedGrinch" />
+                        </div>
+                        <div>
+                            <img src="images/card-two.png" alt="Spider Man" />
+                        </div>
+                        <div>
+                            <img src="images/card-three.png" alt="Spongebob boss" />
+                        </div>
+                        <div>
+                            <img src="images/card-four.png" alt="Squidward boss" />
+                        </div>
+                    </div>
+                    <p>Harry Potter</p>
+                    <div>
+                        <img src="images/four-card-together.png" alt="four-card-together" />
+                    </div>
+                </div>
             </div>
         </div>
     </body>

@@ -194,4 +194,122 @@ img[src="images/Myprofilepicture.png"] {
 
 .miniBoxes > a:hover {
     background-color: yellow;
+} 
+
+.flash {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    align-self: stretch;
+}
+
+.flash-on-sale {
+    display: flex;
+    width: 700px;
+    height: 16px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.on-sale {
+    color: #FAE101;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.countdown {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.unit {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.number {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background: #FAE101;
+}
+
+.label {
+    font-size: 1rem;
+    visibility: hidden;
+}
+
+.cards {
+    display: flex;
+    height: 260px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.cards > div {
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid #FAE101;
+    background: #222224;
+}
+
+.div-two {
+
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+button {
+    display: flex;
+    height: 40px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: #FAE101;
+}
+
+.four-cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.allthemes {
+    display: flex;
+    width: 1088px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
 }
