@@ -1,95 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meme Shop</title>
-    <link rel="stylesheet" href="styles/main.css" />
-</head>
-<body>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="logo">
-                <img src="images/Logo.png" alt="logo" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <title>Meme Shop</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-side">
+                <!-- Left Side Navigation -->
+                 <nav>
+                    <div class="logo">
+                        <img src="images/Logo.png" alt="logo" />
+                    </div>
+                    <span>Company</span>
+                    <ul>
+                        <li>
+                            <li><img src="images/General.png" alt="General" /></li>
+                            <li><img src="images/Members.png" alt="Members" /></li>
+                            <li><img src="images/Teams.png" alt="Teams" /></li>
+                            <li><img src="images/Custom.png" alt="Custom" /></li>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="account">
+                    <ul>
+                        <li><img src="images/profile.png" alt="Profile" /></li>
+                        <li><img src="images/myworks.png" alt="My Works" /></li>
+                    </ul>
+                </div>
             </div>
-            <nav>
-                <span>Company</span>
-                <ul>
-                    <li><a href="#">General</a></li>
-                    <li><a href="#">Memes</a></li>
-                    <li><a href="#">Teams</a></li>
-                    <li><a href="#">Custom Media</a></li>
-                </ul>
-            </nav>
-            <div class="account">
-                <ul>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">My Works</a></li>
-                </ul>
-            </div>
-        </aside>
-        <main class="main-content">
-            <header class="header">
-                <h2>GIFTING DAYS</h2>
-                <p>Buy one and get one free</p>
-                <p class="offer-details">Promotional period: 01/15/2025 - 01/30/2025</p>
-            </header>
-
-            <section class="filters">
+            <div class="right-side">
                 <div class="search-bar">
-                    <input type="text" placeholder="Search">
-                    <button><i>Q</i></button>
-                </div>
-                <div class="tags">
-                    <button class="tag active">All</button>
-                    <button class="tag">Grinch</button>
-                    <button class="tag">Harry Potter</button>
-                    <button class="tag">Spongebob</button>
-                </div>
-            </section>
-
-            <section class="flash-sale">
-                <h3>Flash Sale</h3>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="grinch.jpg" alt="Grinch How I Stole Christmas">
-                        <h4>How I Stole Christmas</h4>
-                        <p class="price">$10.99</p>
-                        <button class="add-to-cart">Add to cart</button>
-                    </div>
-                    <div class="product">
-                        <img src="grinch.jpg" alt="Grinch How I Stole Christmas">
-                        <h4>How I Stole Christmas</h4>
-                        <p class="price">$10.99</p>
-                        <button class="add-to-cart">Add to cart</button>
-                    </div>
-                    <div class="product">
-                        <img src="grinch.jpg" alt="Grinch How I Stole Christmas">
-                        <h4>How I Stole Christmas</h4>
-                        <p class="price">$10.99</p>
-                        <button class="add-to-cart">Add to cart</button>
+                    <input type="text" placeholder="Search..." />
+                    <button>
+                        <img src="images/search.png" alt="submit" />
+                    </button>
+                    <div>
+                        <p>Aleksandre</p>
+                        <img src="images/Myprofilepicture.png" alt="Myprofilepicture" />
                     </div>
                 </div>
-            </section>
-
-            <section class="all-themes">
-                <h3>All Themes</h3>
-                <div class="product-grid">
-                    <div class="product">
-                        <img src="grinch.jpg" alt="Grinch How I Stole Christmas">
-                        <h4>How I Stole Christmas</h4>
+                <!-- Right Side Content -->
+                <div class="mainContent">
+                    <div class="mainContentText">
+                        <h1>GIFTING DAYS</h1>
+                        <h2>Buy one and get one free</h2>
+                        <span>Pellentesque vehicula eros neque, maximus mattis est sagittis facilisi.<p>”In sed pretium metus”.</p></span>
                     </div>
-                    <div class="product">
-                        <img src="spiderman.jpg" alt="Spiderman">
-                        <h4>Spiderman</h4>
-                    </div>
-                    <div class="product">
-                        <img src="spongebob.jpg" alt="Spongebob">
-                        <h4>Spongebob</h4>
+                    <div>
+                        <img class="mainImg" src="images/GrinchwMoney.png" alt="GrinchwMoney" />
                     </div>
                 </div>
-            </section>
-        </main>
-    </div>
-</body>
+                <div class="miniBoxes">
+                    <a href="#">
+                        <img src="images/All.png" alt="All" />
+                        <p>All</p>
+                    </a>
+                    <a href="#">
+                        <img src="images/Grinch.png" alt="Grinch" />
+                        <p>Grinch</p>
+                    </a>
+                    <a href="#">
+                        <img src="images/HarryPotter.png" alt="harryPotter" />
+                        <p>Harry Potter</p>
+                    </a>
+                    <a href="#">
+                        <img src="images/SpongeBob.png" alt="SpongeBob" />
+                        <p>SpongeBob</p>
+                    </a>
+                </div>
+                <div>
+                    <h1 class="flash">Flash Sale</h1>
+                    <div class="flash-on-sale">
+                        <p class="on-sale">On sale Now</p>
+                        <span>Ending in</span>
+                        <div class="countdown">
+                            <div class="time">
+                                <div class="unit">
+                                    <div id="days" class="number">00</div>
+                                    <div class="label">Days</div>
+                                </div>
+                                <div class="unit">
+                                    <div id="hours" class="number">00</div>
+                                    <div class="label">Hours</div>
+                                </div>
+                                <div class="unit">
+                                    <div id="minutes" class="number">00</div>
+                                    <div class="label">Minutes</div>
+                                </div>
+                                <div class="unit">
+                                    <div id="seconds" class="number">00</div>
+                                    <div class="label">Seconds</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        const countdownDuration = 6 * 24 * 60 * 60 * 1000; // 6 days in milliseconds
+                        let targetDate = new Date().getTime() + countdownDuration;
+                
+                        function updateCountdown() {
+                            const now = new Date().getTime();
+                            const distance = targetDate - now;
+                
+                            if (distance <= 0) {
+                                targetDate = new Date().getTime() + countdownDuration;
+                                return;
+                            }
+                
+                            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                            document.getElementById('days').textContent = String(days).padStart(2, '0');
+                            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+                        }
+                
+                        setInterval(updateCountdown, 1000);
+                        updateCountdown();
+                    </script>
+                </div>
+                <div class="cards">
+                    <div>
+                        <div>
+                            <img src="images/wantedGrinch.png" alt="wantedGrinch" />
+                        </div>
+                        <div class="div-two">
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <h4>How i stole Christmas</h4>
+                            <span>Grinch got caught stealing Christmas spirit.</span>
+                            <p>$10.99</p>
+                            <span>$16.99</span>
+                            <button>
+                                Add to cart
+                            </button>
+                        </div>  
+                    </div>
+                    <div>
+                        <div>
+                            <img src="images/wantedGrinch.png" alt="wantedGrinch" />
+                        </div>
+                        <div class="div-two">
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <h4>How i stole Christmas</h4>
+                            <span>Grinch got caught stealing Christmas spirit.</span>
+                            <p>$10.99</p>
+                            <span>$16.99</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="images/wantedGrinch.png" alt="wantedGrinch" />
+                        </div>
+                        <div class="div-two">
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <img src="images/star.png" alt="star" />
+                            <h4>How i stole Christmas</h4>
+                            <span>Grinch got caught stealing Christmas spirit.</span>
+                            <p>$10.99</p>
+                            <span>$16.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="allthemes">
+                    <p>All Themes</p>
+                    <div class="four-cards">
+                        <div>
+                            <img src="images/card-one.png" alt="wantedGrinch" />
+                        </div>
+                        <div>
+                            <img src="images/card-two.png" alt="Spider Man" />
+                        </div>
+                        <div>
+                            <img src="images/card-three.png" alt="Spongebob boss" />
+                        </div>
+                        <div>
+                            <img src="images/card-four.png" alt="Squidward boss" />
+                        </div>
+                    </div>
+                    <p>Harry Potter</p>
+                    <div>
+                        <img src="images/four-card-together.png" alt="four-card-together" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
